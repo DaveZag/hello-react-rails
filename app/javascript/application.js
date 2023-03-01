@@ -1,11 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import Hello from "./components/hello.js";
+import { store } from "./redux/configureStore";
+import { Provider } from "react-redux";
+
+import Greeting from "./components/Greeting.js";
 
 function App() {
   return (
     <div>
-      <Hello />
+      <Greeting />
     </div>
   );
 }
@@ -14,6 +17,8 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
   <React.StrictMode>
-    <App />
+    <Provider store={store}>
+      <App />
+    </Provider>
   </React.StrictMode>
 );
