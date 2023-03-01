@@ -19,8 +19,15 @@ body {
   background-color: rgb(241, 193, 62);
 }
 
+div:has(button) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 #root > div {
-  min-width: 15rem;
+  width: 30rem;
   background-color: aliceblue;
   padding: 1rem 1.5rem;
   border-radius: 10px;
@@ -36,7 +43,6 @@ button {
   border: none;
   border-radius: 10px;
   padding: 1rem 2rem;
-  /* background-color: rgb(241, 193, 62); */
   background-color: black;
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.411);
   color: white;
