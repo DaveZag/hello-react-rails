@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import Hello from "./components/hello";
+import Hello from "./components/hello.js";
 
 function App() {
   return (
