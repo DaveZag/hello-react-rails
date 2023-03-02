@@ -113,7 +113,6 @@ Example command:
   gem install rails rspec
   rspec ./spec/models/ -->
 
-```
 
 ## 👥 Author <a name="authors"></a>
 
